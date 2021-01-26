@@ -26,7 +26,7 @@ html {
 .main__container {
   text-align:center;
   margin: 100px 0;
-  /* opacity: 0.7; */
+  opacity: 0.7;
 }
 
 img {
@@ -45,10 +45,10 @@ img:hover {
 }
 
 button {
-  margin: 50px 0 !important;
+  /* margin: 50px 0 !important;
   border-radius: 5px !important;
   border: none !important;
-  padding: 6px !important;
+  padding: 6px !important; */
 
 }
 
