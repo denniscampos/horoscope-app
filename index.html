@@ -1,51 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-    	<meta charset="utf-8">
-    	<meta name="description" content="This is where your description goes">
-    	<meta name="keywords" content="one, two, three">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="description" content="This is where your description goes" />
+    <meta name="keywords" content="one, two, three" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-		<title>Daily Horoscope</title>
+    <title>Daily Horoscope</title>
 
-		<!-- external CSS link -->
-		<link rel="preconnect" href="https://fonts.gstatic.com">
-		<link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
-		<link rel="stylesheet" href="css/normalize.css">
-		<link rel="stylesheet" href="css/style.css">
-	</head>
-	<body>
-		<div class="main__container">
-		<label for="horoscope">Choose your sign:</label>
-		<select name="horoscope" id="horoscopes">
-		  <option value="aries" id="aries1">Aries</option>
-		  <option value="gemini" id="gemini1">Gemini</option>
-		  <option value="taurus" id="taurus1">Taurus</option>
-		  <option value="cancer" id="cancer1">Cancer</option>
-		  <option value="leo" id="leo1">Leo</option>
-		  <option value="virgo" id="virgo1">Virgo</option>
-		  <option value="libra" id="libra1">Libra</option>
-		  <option value="scorpio" id="scorpio1">Scorpio</option>
-		  <option value="sagittarius" id="sagittarius1">Sagittarius</option>
-		  <option value="capricorn" id="capricorn1">Capricorn</option>
-		  <option value="aquarius" id="aquarius1">Aquarius</option>
-		  <option value="pisces" id="pisces1">Pisces</option>
-		</select>
+    <!-- external CSS link -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="main__container">
+      <label for="horoscope">Choose your sign:</label>
+      <select name="horoscope" id="horoscopes">
+        <option value="aries" id="aries1">Aries</option>
+        <option value="gemini" id="gemini1">Gemini</option>
+        <option value="taurus" id="taurus1">Taurus</option>
+        <option value="cancer" id="cancer1">Cancer</option>
+        <option value="leo" id="leo1">Leo</option>
+        <option value="virgo" id="virgo1">Virgo</option>
+        <option value="libra" id="libra1">Libra</option>
+        <option value="scorpio" id="scorpio1">Scorpio</option>
+        <option value="sagittarius" id="sagittarius1">Sagittarius</option>
+        <option value="capricorn" id="capricorn1">Capricorn</option>
+        <option value="aquarius" id="aquarius1">Aquarius</option>
+        <option value="pisces" id="pisces1">Pisces</option>
+      </select>
 
-		<label for="day">Pick Day: </label>
-		<select name="day" id="day">
-			<option value="today">Today</option>
-			<option value="yesterday">Yesterday</option>
-			<option value="tomorrow">Tomorrow</option>
-			
-		</select>
-		<div class="main__button">
-			<button type="submit">Submit</button>
-		</div>
+      <label for="day">Pick Day: </label>
+      <select name="day" id="day">
+        <option value="today">Today</option>
+        <option value="yesterday">Yesterday</option>
+        <option value="tomorrow">Tomorrow</option>
+      </select>
+      <div class="main__button">
+        <button type="submit">Submit</button>
+      </div>
 
-		<h2 id="horoscope__sign">HOROSCOPE SIGN</h2>
-			<img id="img__print" src="img/transparent.png" alt="Astrology Sign" />
+      <h2 id="horoscope__sign">HOROSCOPE SIGN</h2>
+      <img id="img__print" src="img/transparent.png" alt="Astrology Sign" />
 
-		<!-- <img id="aries" src="img/aries.png" alt="">
+      <!-- <img id="aries" src="img/aries.png" alt="">
 		<img id="gemini" src="img/gemini.png" alt="">
 		<img id="taurus" src="img/taurus.png" alt="">
 		<img id="cancer" src="img/cancer.png" alt="">
@@ -58,22 +61,15 @@
 		<img id="aquarius" src="img/aquarius.png" alt="">
 		<img id="pisces" src="img/pisces.png" alt=""> -->
 
+      <h3>Compatibility: <span id="compatibility"></span></h3>
+      <h3>Lucky Time: <span id="luckyTime"></span></h3>
+      <h3>Lucky Number: <span id="luckyNumber"></span></h3>
+      <h3>Color: <span id="color"></span></h3>
+      <h3>Date Range: <span id="dateRange"></span></h3>
+      <h3>Mood: <span id="mood"></span></h3>
+      <h3>Description: <span id="description"></span></h3>
+    </div>
 
-		<h3>Compatibility: <span id="compatibility"></span></h3>
-		<h3>Lucky Time: <span id="luckyTime"></span></h3>
-		<h3>Lucky Number: <span id="luckyNumber"></span></h3>
-		<h3>Color: <span id="color"></span></h3>
-		<h3>Date Range: <span id="dateRange"></span></h3>
-		<h3>Mood: <span id="mood"></span></h3>
-		<h3>Description: <span id="description"></span></h3>
-	</div>
-
-
-
-
-		<script type="text/javascript" src="js/main.js"></script>
-	</body>
+    <script type="text/javascript" src="js/main.js"></script>
+  </body>
 </html>
-
-
-
