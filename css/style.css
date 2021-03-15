@@ -5,6 +5,7 @@
 /* Box Model Hack */
 *{
   box-sizing: border-box;
+  /* outline: 1px solid black; */
 }
 
 /******************************************
@@ -24,9 +25,43 @@ html {
 
 
 .main__container {
-  text-align:center;
-  margin: 100px 0;
+  margin: 100px 30px;
   opacity: 0.7;
+}
+
+.choose_sign, 
+.choose_day {
+  display: flex;
+  align-items: baseline;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+
+.main__button {
+  display: flex; 
+  flex-direction: column;
+  align-items: center;
+}
+
+.input_data {
+  display: flex;
+  flex-wrap: wrap; 
+  justify-content: center;
+  align-items: baseline;
+}
+
+.horoscope_picture {
+  display: flex; 
+  flex-direction: column;
+  align-items: center;
+}
+
+.horoscope_information {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
 }
 
 img {
@@ -45,11 +80,10 @@ img:hover {
 }
 
 button {
-  margin: 50px 0 !important;
-  /* border-radius: 5px !important;
-  border: none !important; */
-  padding: 6px !important;
-
+  border-radius: 5px !important;
+  border: none !important; 
+  margin: 15px 0;
+  padding: 0 10px;
 }
 
 select {
@@ -80,139 +114,3 @@ span {
 /* ADDITIONAL STYLES
 /*******************************************/
 /* ----------- iPhone 4 and 4S ----------- */
-
-/* Portrait and Landscape */
-@media only screen 
-  and (min-device-width: 320px) 
-  and (max-device-width: 480px)
-  and (-webkit-min-device-pixel-ratio: 2) {
-
-}
-
-/* Portrait */
-@media only screen 
-  and (min-device-width: 320px) 
-  and (max-device-width: 480px)
-  and (-webkit-min-device-pixel-ratio: 2)
-  and (orientation: portrait) {
-}
-
-/* Landscape */
-@media only screen 
-  and (min-device-width: 320px) 
-  and (max-device-width: 480px)
-  and (-webkit-min-device-pixel-ratio: 2)
-  and (orientation: landscape) {
-
-}
-
-/* ----------- iPhone 5, 5S, 5C and 5SE ----------- */
-
-/* Portrait and Landscape */
-@media only screen 
-  and (min-device-width: 320px) 
-  and (max-device-width: 568px)
-  and (-webkit-min-device-pixel-ratio: 2) {
-
-}
-
-/* Portrait */
-@media only screen 
-  and (min-device-width: 320px) 
-  and (max-device-width: 568px)
-  and (-webkit-min-device-pixel-ratio: 2)
-  and (orientation: portrait) {
-}
-
-/* Landscape */
-@media only screen 
-  and (min-device-width: 320px) 
-  and (max-device-width: 568px)
-  and (-webkit-min-device-pixel-ratio: 2)
-  and (orientation: landscape) {
-
-}
-
-/* ----------- iPhone 6, 6S, 7 and 8 ----------- */
-
-/* Portrait and Landscape */
-@media only screen 
-  and (min-device-width: 375px) 
-  and (max-device-width: 667px) 
-  and (-webkit-min-device-pixel-ratio: 2) { 
-
-}
-
-/* Portrait */
-@media only screen 
-  and (min-device-width: 375px) 
-  and (max-device-width: 667px) 
-  and (-webkit-min-device-pixel-ratio: 2)
-  and (orientation: portrait) { 
-
-}
-
-/* Landscape */
-@media only screen 
-  and (min-device-width: 375px) 
-  and (max-device-width: 667px) 
-  and (-webkit-min-device-pixel-ratio: 2)
-  and (orientation: landscape) { 
-
-}
-
-/* ----------- iPhone 6+, 7+ and 8+ ----------- */
-
-/* Portrait and Landscape */
-@media only screen 
-  and (min-device-width: 414px) 
-  and (max-device-width: 736px) 
-  and (-webkit-min-device-pixel-ratio: 3) { 
-
-}
-
-/* Portrait */
-@media only screen 
-  and (min-device-width: 414px) 
-  and (max-device-width: 736px) 
-  and (-webkit-min-device-pixel-ratio: 3)
-  and (orientation: portrait) { 
-
-}
-
-/* Landscape */
-@media only screen 
-  and (min-device-width: 414px) 
-  and (max-device-width: 736px) 
-  and (-webkit-min-device-pixel-ratio: 3)
-  and (orientation: landscape) { 
-
-}
-
-/* ----------- iPhone X ----------- */
-
-/* Portrait and Landscape */
-@media only screen 
-  and (min-device-width: 375px) 
-  and (max-device-width: 812px) 
-  and (-webkit-min-device-pixel-ratio: 3) { 
-
-}
-
-/* Portrait */
-@media only screen 
-  and (min-device-width: 375px) 
-  and (max-device-width: 812px) 
-  and (-webkit-min-device-pixel-ratio: 3)
-  and (orientation: portrait) { 
-
-}
-
-/* Landscape */
-@media only screen 
-  and (min-device-width: 375px) 
-  and (max-device-width: 812px) 
-  and (-webkit-min-device-pixel-ratio: 3)
-  and (orientation: landscape) { 
-
-}
